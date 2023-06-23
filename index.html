@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('https://th.bing.com/th/id/OIG.ib9p0LsnXmgMtcAr6w0f?pid=ImgGn');
+      background-size: contain;
+      background-position: center;
+      background-repeat: repeat;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        color: Tan;
+        margin-top: 300px;
+    }
+
+    .section {
+      width: 50%;
+      margin: 350px auto;
+      background-color: tan;
+      padding: 40px;
+      margin-bottom: 20px;
+      color: #fff;
+      text-align: center;
+      opacity: 0;
+    }
+
+    .section1 {
+        background-color: transparent;
+    }
+
+    .videoFrame {
+        width: 90%;
+
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>The Coffee Shop</h1>
+    </header>
+  <div class="section section1">
+    <h2>Coffee Maker</h2>
+    <p>by Donny Drose</p>
+    <iframe width="25%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/815659528"></iframe>
+  </div>
+
+  <div class="section section2">
+    <h2>The Dishwasher</h2>
+    <p></p>The dishwasher was usually the last one to clock out, but we were never too far apart from being among the last to leave the restaurant. We often nodded to each other from across the subway tracks. There were so many unspoken conversations when we exchanged racks of dirty and clean glasses during service hours, but it was only while I waited for the train at dawn that I tried to imagine his life before he came to this corner bar at 16 th Street and Union Square. I often wondered if his village was like mine. I imagined all the things that were familiar to him—the cock-a-doodle-doo of the rooster at the rising of a star that peeked through the wooden cracks of his flat house, the smell of mashed plantains, and the heavy dust of the village road. The graveyard shift as a dishwasher at The Coffee Shop was Owia’s third job. Dressed in white overalls, he started and ended his shifts at the sink. He would scrape the remains of food off the plates and into the full garbage and rock back and forth humming a lullaby with the swish swash of the water in the deep silver sink. My memories of home are like broken chords. I have faint memories now of waking up to the morning mist over rice paddies and the dew drops on the lotus leaves—beads of water like gentle eyes looking up at me. I miss those unassuming eyes, watery reflections of a life in slow motion. Here, the days are fast and harsh, and I get lost in my stories of a life I can barely recall. I no longer know which parts of me are real. I am a slippery dream. I have so many versions of myself. One version began at the legendary Coffee Shop, where I got my start as a bartender, where I felt a sense of belonging with a group of people who were mostly far from home in so many ways. I recall feeling like a bottom feeder yet special because I had some window into this city that only some of us were given access to; dodging sidewalk vomit at the darkest hour when the garbage trucks hauled up to 16th street, screeching a slow and long noise, I felt special knowing that we were innately different from the others. I used to imagine the people in the nearby buildings: stockbrokers, schoolteachers, bank tellers, and receptionists hiding their heads under their pillows for one last snooze as I walked into the subway, into the underground, away from the moon’s faded silver face. I don’t know if I dreamt during the day, sleep was deep, but my body was weary. There’s a bird in the jungle who whistles,</p>
+    <audio controls>
+      <source src="audio2.mp3" type="audio/mpeg">
+    </audio>
+    <a href="https://soundcloud.com/artist2" target="_blank">Artist 2 SoundCloud</a>
+  </div>
+
+  <div class="section section3">
+    <h2>Who I Am</h2>
+    <p>by Hosanna Littlebird</p>
+    <div class="videoFrame">
+        <iframe src="https://www.youtube.com/embed/laClNqQB2tM" title="Hosanna Littlebird - Who I Am" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <a href="https://soundcloud.com/artist3" target="_blank">Artist 3 SoundCloud</a>
+  </div>
+
+  <div class="section">
+    <h2>Section 4</h2>
+    <p>Poem 4</p>
+    <audio controls>
+      <source src="audio4.mp3" type="audio/mpeg">
+    </audio>
+    <a href="https://soundcloud.com/artist4" target="_blank">Artist 4 SoundCloud</a>
+  </div>
+
+  <div class="section">
+    <h2>Section 5</h2>
+    <p>Poem 5</p>
+    <audio controls>
+      <source src="audio5.mp3" type="audio/mpeg">
+    </audio>
+    <a href="https://soundcloud.com/artist5" target="_blank">Artist 5 SoundCloud</a>
+  </div>
+
+  <script>
+    function isElementInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function animateSectionsOnScroll() {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach((section) => {
+        if (isElementInViewport(section)) {
+          section.style.opacity = 1;
+          section.classList.add('fade-in');
+        }
+      });
+    }
+
+    document.addEventListener('scroll', animateSectionsOnScroll);
+  </script>
+  <style>
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation-name: fade-in;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+  </style>
+</body>
+</html>
